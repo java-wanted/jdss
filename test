@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+import numpy as np
+from dss import DSS
+
+DSS.deside(
+    xp=np.array(
+        [
+            [143, 8, 170],
+            [150, 9, 140],
+            [148, 9, 150],
+        ],
+        dtype=int,
+    ),
+    inc=np.array([False, True, False], dtype=bool),
+    wgt=np.array([0.3, 0.3, 0.4], dtype=float),
+    kk=np.array([0.25, 0.25, 0.25, 0.25], dtype=float),
+)
